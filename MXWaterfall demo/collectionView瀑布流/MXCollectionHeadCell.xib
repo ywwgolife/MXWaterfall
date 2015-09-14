@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MXCollectionHeadCell" id="gTV-IL-0wX" customClass="MXCollectionHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XME-bd-VgY">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejL-aI-jaz">
+                                <rect key="frame" x="10" y="10" width="130" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka2-cc-hAo">
+                                <rect key="frame" x="54" y="10" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ejL-aI-jaz" firstAttribute="top" secondItem="XME-bd-VgY" secondAttribute="top" constant="10" id="4LT-dK-9o3"/>
+                            <constraint firstAttribute="trailing" secondItem="ejL-aI-jaz" secondAttribute="trailing" constant="10" id="4na-ow-2Sb"/>
+                            <constraint firstAttribute="centerX" secondItem="ka2-cc-hAo" secondAttribute="centerX" id="9nj-TA-SX3"/>
+                            <constraint firstAttribute="bottom" secondItem="ejL-aI-jaz" secondAttribute="bottom" constant="10" id="Gih-cd-GTd"/>
+                            <constraint firstAttribute="centerY" secondItem="ka2-cc-hAo" secondAttribute="centerY" id="Grm-jX-csR"/>
+                            <constraint firstItem="ejL-aI-jaz" firstAttribute="leading" secondItem="XME-bd-VgY" secondAttribute="leading" constant="10" id="MdC-M2-ELr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="XME-bd-VgY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="38N-f4-LtY"/>
+                <constraint firstItem="XME-bd-VgY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5BW-yh-NFk"/>
+                <constraint firstAttribute="trailing" secondItem="XME-bd-VgY" secondAttribute="trailing" id="GKf-Fd-de9"/>
+                <constraint firstAttribute="bottom" secondItem="XME-bd-VgY" secondAttribute="bottom" id="aJ8-De-EcT"/>
+            </constraints>
+            <size key="customSize" width="145" height="43"/>
+            <connections>
+                <outlet property="backView" destination="XME-bd-VgY" id="MsS-qW-wdq"/>
+                <outlet property="lakeView" destination="ejL-aI-jaz" id="BnX-Ev-eTW"/>
+                <outlet property="weekTitleLabel" destination="ka2-cc-hAo" id="red-7Q-J3g"/>
+            </connections>
+            <point key="canvasLocation" x="556" y="343"/>
+        </collectionViewCell>
+    </objects>
+</document>
